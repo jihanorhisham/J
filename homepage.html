@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link 
+		rel="stylesheet" 
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+		crossorigin="anonymous" 
+		referrerpolicy="no-referrer" 
+	/>
+	<link rel="stylesheet" href="homepage.css" />
+	<title>Hospital Bajizara</title>
+
+</head>
+<body>
+	<header>
+		<div class="navbar">
+			<div class="logo">
+				<!-- <img src="image/logoHospWeb.png" alt="">  -->
+				<h2 href="#"><span> BAJIZARA HOSPITALS</span></h2>
+			</div>
+			<ul class="links">
+				<li><a href="hero">Home</a></li>
+				<li><a href="about">About</a></li>
+				<li><a href="services">Our Services</a></li>
+				<li><a href="doctor">Find A Doctor</a></li>
+				<li><a href="contact">Contact Us</a></li>
+			</ul>
+			<a href="#" class="action_btn">Get Started</a>
+			<div class="toggle_btn">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+		</div>
+
+		<div class="dropdown_menu">
+			<li><a href="hero">Home</a></li>
+			<li><a href="about">About</a></li>
+			<li><a href="services">Our Services</a></li>
+			<li><a href="doctor">Find A Doctor</a></li>
+			<li><a href="contact">Contact Us</a></li>
+			<li><a href="#" class="action_btn">Get Started</a></li>
+		</div>
+	</header>
+
+	<!-- <main>
+		<section id="hero">
+			
+		</section>
+	</main>> -->
+
+	<div class="home">
+		<div class="main-home">
+			<div class="main-inner-home">
+				<h1> We Are Providing</h1>
+				<h3> Best Medical Services</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					Maecenas nec condimentum tellus. Vivamus mattis orci risus, ut elementum tellus dictum nec. 
+					Donec sapien justo, rhoncus sit amet est nec, laoreet aliquet arcu. Morbi eu lacus dictum, bibendum ipsum sit amet, condimentum felis. 
+					Praesent consectetur sed eros non lacinia. 
+				</p>
+			</div> 
+			<!-- <div class="main-inner-home">
+				<div class="right-content-img"></div>
+			</div> -->
+		</div>
+	</div> 
+
+	<!-- <div class="services">
+		<div class="service-heading">
+			<h1>Our <span>Services</span></h1>
+		</div>
+
+		<div class="main-services">
+			<div class="main-inner-services">
+				<div class="services-img">
+					<img src="image/Physician-Preference-Items-Part-2-Price-Transparency-featured.png" alt="">
+				</div>
+				<div class="services-content">
+					<h4>Eye Care</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+						Maecenas nec condimentum tellus. Vivamus mattis orci risus, ut elementum tellus dictum nec. 
+						Donec sapien justo, rhoncus sit amet est nec,
+					</p>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+
+
+	<script>
+		const toggleBtn = document.querySelector('.toggle_btn')
+		const toggleBtnIcon = document.querySelector('.toggle_btn i')
+		const dropDownMenu = document.querySelector('.dropdown_menu')
+
+		toggleBtn.onclick = function () {
+			dropDownMenu.classList.toggle('open')
+			const isOpen = dropDownMenu.classList.contains('open')
+
+			toggleBtnIcon.classList = isOpen
+			? 'fa-solid fa-xmark'
+			: 'fa-solid fa-bars'
+			
+		}
+	</script>
+</body>
+</html>
